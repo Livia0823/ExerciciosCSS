@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 13</title>
+</head>
+<body>
+ <div class="titulo">
+    <h1>Colaboradores</h1>
+</div>
+
+<div class="conteudo">
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+    <div class="item item4"></div>
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+    <div class="item item4"></div>
+    <div class="item item1"></div>
+    <div class="item item2"></div>
+    <div class="item item3"></div>
+    <div class="item item4"></div>
+</div>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    background-color: rebeccapurple;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.conteudo {
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background: rgb(244, 243, 243);
+    flex-grow: 0;
+    flex-shrink: 1;
+    border-radius: 30px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+}
+.item:hover {
+    width: 380px;
+    height: 380px;
+}
+
+.item1 {
+    background-image: url(img/faces01.jpg);
+}
+
+.item2 {
+    background-image: url(img/faces02.jpg);
+}
+
+.item3 {
+    background-image: url(img/faces03.avif);
+}
+
+.item4 {
+    background-image: url(img/faces04.jpg);
+}
+</style>
+
+</body>
+</html>
